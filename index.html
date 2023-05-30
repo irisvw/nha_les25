@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery pagina</title>
+
+    <style>
+        body {
+            font-family: "Trebuchet MS", sans-serif;
+        }
+
+        main {
+            margin: 50px;
+        }
+
+        header {
+            background-color: #007fff;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            text-align: center;
+            padding: 1rem;
+            min-height: 100px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            font-size: smaller;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #007fff;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+    <script type="text/javascript">
+        $(function () {
+            $("#tabs").tabs(
+                { collapsible: true
+                });
+        });
+
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>jQuery Test Pagina</h1>
+    </header>
+
+    <main>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Lorem</a></li>
+                <li><a href="#tabs-2">Ipsum</a></li>
+                <li><a href="#tabs-3">Dolor</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>
+                    These tabs are collapsible! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat. <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras enim odio, vestibulum at semper in,
+                    vehicula et leo. Proin malesuada malesuada maximus. Morbi tempus ipsum hendrerit erat finibus
+                    semper. Ut
+                    consequat sem sed molestie fringilla. Maecenas mollis at turpis quis bibendum. Sed nec nulla
+                    vehicula,
+                    dictum erat vel, vestibulum metus. Sed eu volutpat dolor. <br>Nulla vulputate volutpat mi, in
+                    pellentesque
+                    velit congue vel. Donec vestibulum rutrum accumsan. In hac habitasse platea dictumst. Suspendisse
+                    vulputate, mi malesuada sodales faucibus, neque lorem venenatis ipsum, sed sollicitudin nisl erat
+                    vel
+                    purus. Duis fringilla accumsan ipsum et auctor. Phasellus eu purus nunc.</p>
+            </div>
+            <div id="tabs-2">
+                <p>hasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare,
+                    felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum. Lorem ipsum dolor
+                    sit
+                    amet, consectetur adipiscing elit. Cras enim odio, vestibulum at semper in, vehicula et leo. Proin
+                    malesuada malesuada maximus. Morbi tempus ipsum hendrerit erat finibus semper. Ut consequat sem sed
+                    molestie fringilla. Maecenas mollis at turpis quis bibendum. Sed nec nulla vehicula, dictum erat
+                    vel,
+                    vestibulum metus. Sed eu volutpat dolor. Nulla vulputate volutpat mi, in pellentesque velit congue
+                    vel.
+                    Donec vestibulum rutrum accumsan. In hac habitasse platea dictumst. Suspendisse vulputate, mi
+                    malesuada
+                    sodales faucibus, neque lorem venenatis ipsum, sed sollicitudin nisl erat vel purus. Duis fringilla
+                    accumsan ipsum et auctor. Phasellus eu purus nunc.</p>
+            </div>
+            <div id="tabs-3">
+                <p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna,
+                    interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue. Lorem
+                    ipsum
+                    dolor sit amet, consectetur adipiscing elit. Cras enim odio, vestibulum at semper in, vehicula et
+                    leo.
+                    Proin malesuada malesuada maximus. Morbi tempus ipsum hendrerit erat finibus semper. Ut consequat
+                    sem
+                    sed molestie fringilla. Maecenas mollis at turpis quis bibendum. Sed nec nulla vehicula, dictum erat
+                    vel, vestibulum metus. Sed eu volutpat dolor. Nulla vulputate volutpat mi, in pellentesque velit
+                    congue
+                    vel. Donec vestibulum rutrum accumsan. In hac habitasse platea dictumst. Suspendisse vulputate, mi
+                    malesuada sodales faucibus, neque lorem venenatis ipsum, sed sollicitudin nisl erat vel purus. Duis
+                    fringilla accumsan ipsum et auctor. Phasellus eu purus nunc.</p>
+                <img src="https://via.placeholder.com/360x360" width="300" alt="placeholder">
+            </div>
+        </div>
+
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+    </main>
+
+    <footer>&copy; 2023 Iris van Willigen</footer>
+</body>
+
+</html>
